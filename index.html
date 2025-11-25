@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#800000" />
+    <title>Aditi & Rohan Wedding Invitation</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Rozha+One&family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              maroon: {
+                50: '#fdf2f2',
+                100: '#fde6e6',
+                600: '#9b1c1c',
+                700: '#800000', // Traditional wedding red
+                800: '#6b0000',
+                900: '#4a0404',
+              },
+              gold: {
+                200: '#fde68a',
+                300: '#fcd34d',
+                400: '#fbbf24',
+                500: '#f59e0b',
+                600: '#d97706',
+              },
+              cream: '#FFFDD0',
+            },
+            fontFamily: {
+              serif: ['"Noto Serif Devanagari"', 'serif'],
+              script: ['"Great Vibes"', 'cursive'],
+              'wedding-title': ['"Rozha One"', 'serif'],
+              'wedding-script': ['"Amita"', 'cursive'],
+            },
+            backgroundImage: {
+              'floral-pattern': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            },
+            animation: {
+              'fade-in-down': 'fadeInDown 1s ease-out',
+              'spin-slow': 'spin 12s linear infinite',
+              'bounce-slow': 'bounce 2s infinite',
+            },
+            keyframes: {
+              fadeInDown: {
+                '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      body {
+        font-family: 'Noto Serif Devanagari', serif;
+        background-color: #fffdf5;
+        background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+        background-attachment: fixed;
+      }
+      
+      .ornament-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem 0;
+      }
+      .ornament-divider::before,
+      .ornament-divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #d97706;
+        margin: 0 1rem;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
